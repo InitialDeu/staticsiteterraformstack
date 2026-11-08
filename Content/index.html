@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TODO: replace example.com with your domain (www.<your-domain>) in the tags below -->
+  <title>Your Name | Your Job Title</title>
+  <meta name="description" content="Online CV of Your Name: experience, education and projects.">
+  <link rel="canonical" href="https://www.example.com/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Name | Your Job Title">
+  <meta property="og:description" content="Online CV: experience, education and projects.">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/assets/avatar.svg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-overlay">
+    <div class="hero-topbar">
+      <div class="hero-title">
+        <h1 data-i18n="hero.name">Your Name</h1>
+        <p data-i18n="hero.role">Your Job Title</p>
+      </div>
+
+      <nav class="hero-nav">
+        <a href="#profile" data-i18n="nav.profile">Profile</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <button class="lang-toggle" id="langToggle" type="button"></button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="profile-box">
+      <img src="assets/avatar.svg" alt="Profile picture" class="profile-pic" width="110" height="110">
+      <h3 data-i18n="hero.name">Your Name</h3>
+      <span class="role" data-i18n="hero.role">Your Job Title</span>
+    </div>
+
+    <div class="contacts">
+      <h4 data-i18n="sidebar.contacts">Contacts</h4>
+      <ul>
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile/">LinkedIn</a></li>
+        <li><a href="https://github.com/your-username">GitHub</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <section class="card" id="profile">
+      <h2 data-i18n="profile.title">Profile</h2>
+      <p data-i18n="profile.text">Write a short introduction about yourself here: who you are, what you do and what you are looking for. Two or three sentences are enough.</p>
+    </section>
+
+    <section class="card" id="experience">
+      <h2 data-i18n="experience.title">Experience</h2>
+
+      <div class="item">
+        <h3 data-i18n="experience.job1.role">Job Title</h3>
+        <span data-i18n="experience.job1.period">Company Name · 2022 - Present</span>
+        <ul>
+          <li data-i18n="experience.job1.b1">Describe a responsibility or an achievement</li>
+          <li data-i18n="experience.job1.b2">Describe another one, ideally with a measurable result</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3 data-i18n="experience.job2.role">Previous Job Title</h3>
+        <span data-i18n="experience.job2.period">Previous Company · 2019 - 2022</span>
+        <ul>
+          <li data-i18n="experience.job2.b1">Describe what you did there</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" id="education">
+      <h2 data-i18n="education.title">Education</h2>
+
+      <div class="item">
+        <h3 data-i18n="education.degree.role">Degree or Diploma</h3>
+        <span data-i18n="education.degree.period">School or University · 2014 - 2019</span>
+        <ul>
+          <li data-i18n="education.degree.b1">A subject, a thesis or something you are proud of</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" id="projects">
+      <h2 data-i18n="projects.title">Projects</h2>
+
+      <div class="item">
+        <h3 class="project-title"><a href="https://github.com/your-username/project-one" target="_blank" rel="noopener" data-i18n="projects.p1.title">Project One</a></h3>
+        <p data-i18n="projects.p1.desc">One or two sentences about the project and the technologies used.</p>
+      </div>
+
+      <div class="item">
+        <h3 class="project-title"><a href="https://github.com/your-username/project-two" target="_blank" rel="noopener" data-i18n="projects.p2.title">Project Two</a></h3>
+        <p data-i18n="projects.p2.desc">One or two sentences about the project and the technologies used.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  © 2026 Your Name
+</footer>
+
+<script src="Language.js"></script>
+
+<!-- Structured data for search engines: edit with your own details -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Your Name",
+  "jobTitle": "Your Job Title",
+  "url": "https://www.example.com/",
+  "sameAs": [
+    "https://www.linkedin.com/in/your-profile/",
+    "https://github.com/your-username"
+  ]
+}
+</script>
+</body>
+</html>

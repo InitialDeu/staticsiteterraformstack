@@ -1,0 +1,11 @@
+# Optional: store the Terraform state in S3 instead of a local file.
+# Copy to backend.tf (git-ignored) and adjust. The bucket must already exist.
+# Without a backend.tf, Terraform keeps the state in terraform.tfstate (git-ignored).
+terraform {
+  backend "s3" {
+    bucket  = "my-terraform-state-bucket"
+    key     = "static-site/terraform.tfstate"
+    region  = "eu-west-1"
+    encrypt = true
+  }
+}

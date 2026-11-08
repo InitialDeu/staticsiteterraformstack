@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars (git-ignored) and adjust.
+project     = "my-site"
+region      = "eu-west-1"      # region of the S3 bucket
+domain_name = "example.com"    # apex domain; the site is served on www.example.com
+
+# --- DNS: set AT MOST ONE of these (or none and create the records by hand) ---
+# cloudflare_zone_id = "0123456789abcdef0123456789abcdef"   # needs CLOUDFLARE_API_TOKEN
+# route53_zone_id    = "Z0123456789ABCDEFGHIJ"
+
+# --- Google Search Console (needs a DNS provider above) ---
+# enable_google_search = true
+# google_project       = "my-gcp-project"
